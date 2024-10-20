@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Collapsible sidebar using Bootstrap 4</title>
+    <title>Submission UTS Pemweb</title>
 
     <!-- Bootstrap CSS CDN -->
     <link
@@ -14,7 +14,7 @@
       integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
       crossorigin="anonymous"
     />
-    <!-- Our Custom CSS -->
+
     <link rel="stylesheet" href="style.css" />
 
     <!-- Font Awesome JS -->
@@ -65,7 +65,7 @@
       <!-- Page Content  -->
       <div id="content">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
+          <div class="">
             <button type="button" id="sidebarCollapse" class="custom-btn">
               <i class="fas fa-align-left"></i>
               <span id="toggle">S</span>
@@ -297,15 +297,12 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Get the current page ID
         var currentPageId = "home"; // Change this to the ID of the current page
 
-        // Select the corresponding menu link
         var currentMenuLink = document.querySelector(
           'a[href="#' + currentPageId + '"]'
         );
 
-        // Check if the menu link exists and add the class
         if (currentMenuLink) {
           currentMenuLink.classList.add("active-menu");
         }
