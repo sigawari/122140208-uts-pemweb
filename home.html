@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome JS -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper" id="wrapper-form">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <div class="sidebar-header" id="logo">
+          <h1>sigawari<span id="dotted">.</span></h1>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li class="active">
+            <h2><a href="#home">Home</a></h2>
+          </li>
+          <li>
+            <h2><a href="#history">History</a></h2>
+          </li>
+          <li>
+            <h2><a href="#members">Members</a></h2>
+          </li>
+          <li>
+            <h2><a href="#songs">Songs</a></h2>
+          </li>
+        </ul>
+
+        <ul class="list-unstyled CTAs">
+          <li>
+            <a href="form.html" class="form">Share Yours</a>
+          </li>
+          <li>
+            <a href="table.html" class="table">List of You</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="custom-btn">
+              <i class="fas fa-align-left"></i>
+              <span id="toggle">S</span>
+            </button>
+          </div>
+        </nav>
+
+        <div class="container">
+          <!-- Hero Section -->
+          <div class="home" id="home">
+            <h3>
+              Hi, I'm <u><span id="name">Siga</span></u>
+            </h3>
+            <h4>a.k.a Sikah N. Ilmi</h4>
+            <p>
+              Welcome to my blog! I’m excited to share with you one of my
+              favorite bands,
+              <a href="https://www.oneokrock.com/"
+                ><strong>One OK Rock</strong></a
+              >. If you’re into rock music with a mix of Japanese and English
+              lyrics, this band might be the perfect fit for your playlist.
+            </p>
+            <br />
+            <br />
+
+            <h3>Why OOR?</h3>
+            <p>
+              One OK Rock has been a huge inspiration for me. Their unique
+              sound, blending rock, punk, and post-hardcore, really speaks to
+              me. Songs like
+              <strong>
+                <a href="https://youtu.be/4n5bpeh5NNg?si=rEVYEf_xLKpjc6Yq"
+                  >"Renegades"</a
+                ></strong
+              >
+              and
+              <strong>
+                <a href="https://youtu.be/eoQAnGx4Pss?si=iVKfvtCWpk42q030"
+                  >"Wherever You Are"</a
+                ></strong
+              >
+              have become anthems in my life, offering both energy and emotion
+              that stick with me long after the music ends.
+            </p>
+          </div>
+
+          <div class="history" id="history">
+            <h3>History</h3>
+            <p><em>The history about how I met them? Hehe jk</em></p>
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <p>
+                  One OK Rock was formed back in 2005 in Tokyo, and like many
+                  great bands, their journey started with a group of friends who
+                  just wanted to make music together. It all began when Toru
+                  Yamashita, the guitarist, had a dream of starting a rock band
+                  and invited his buddy Ryota Kohama, who actually wasn’t even a
+                  bassist back then—he was into hip-hop dancing! Pretty cool,
+                  right?
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <p>
+                  Later, Taka Moriuchi
+                  <del>(my bf)</del> joined as the lead vocalist, bringing an
+                  amazing vocal range and passion to the group. Eventually,
+                  drummer Tomoya Kanki completed the lineup, and the magic of
+                  One OK Rock started to take shape.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <p>
+                  So why the name One OK Rock? It’s a fun story! They used to
+                  practice at one o’clock in the morning, and when said quickly
+                  in Japanese, “one o’clock” sounds like “One OK Rock” because
+                  of how the "L" and "R" sounds mix. They liked the sound of it
+                  and decided to stick with the name. It’s catchy and really
+                  represents the early days of the band when they were just
+                  finding their sound late at night.
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <p>
+                  One OK Rock hit the big leagues with their song "The
+                  Beginning" in 2012, which was featured in the live-action
+                  Rurouni Kenshin movie. That song not only blew up in Japan but
+                  also caught the attention of international audiences. Their
+                  style—a blend of rock, punk, and post-hardcore—combined with
+                  lyrics in both Japanese and English, makes their music
+                  universal, and that’s a big reason why so many people around
+                  the world love them today.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="members" id="members">
+            <h3>Members</h3>
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                <img
+                  src="assets/taka.png"
+                  alt="Takahiro Moriuchi"
+                  class="img-fluid"
+                />
+                <h4>Takahiro Moriuchi</h4>
+                <h4>TAKA</h4>
+                <p>Vocals</p>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                <img
+                  src="assets/toru.png"
+                  alt="Toru Yamashita"
+                  class="img-fluid"
+                />
+                <h4>Toru Yamashita</h4>
+                <h4>TORU</h4>
+                <p>Guitar</p>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                <img
+                  src="assets/ryota.png"
+                  alt="Ryota Kohama"
+                  class="img-fluid"
+                />
+                <h4>Ryota Kohama</h4>
+                <h4>RYOTA</h4>
+                <p>Bass</p>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+                <img
+                  src="assets/tomoya.png"
+                  alt="Tomoya Kanki"
+                  class="img-fluid"
+                />
+                <h4>Tomoya Kanki</h4>
+                <h4>TOMOYA</h4>
+                <p>Drum</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="songs" id="songs">
+            <h3>Their Best Songs</h3>
+            <p>
+              Based on several sources, including fan polls and critical
+              reviews, here are some of the best songs by
+              <strong>One OK Rock</strong>:
+            </p>
+
+            <ol>
+              <li>
+                <strong>"The Beginning"</strong> – One of their most famous
+                tracks, featured in the *Rurouni Kenshin* movie. It’s often
+                cited as a fan favorite for its high energy and emotional depth.
+              </li>
+              <li>
+                <strong>"Mighty Long Fall"</strong> – A powerful song about the
+                fear of losing someone, which gained massive popularity with its
+                intense, rock-driven melody.
+              </li>
+              <li>
+                <strong>"Wherever You Are"</strong> – This ballad has a more
+                emotional, romantic side, making it a go-to song for fans who
+                love heartfelt lyrics.
+              </li>
+              <li>
+                <strong>"Clock Strikes"</strong> – Known for its soaring vocals
+                and heavy guitar riffs, it's another hit that showcases the
+                band’s rock roots.
+              </li>
+              <li>
+                <strong>"We Are"</strong> – From their *Ambitions* album, this
+                song became an anthem of self-confidence and empowerment,
+                particularly for international fans.
+              </li>
+              <li>
+                <strong>"Gravity"</strong> – This song holds a special place for
+                me! It's not only beautifully composed but also conveys a deep
+                emotional weight. The lyrics and the soaring melody (the guitar
+                playing omg) just resonate on a personal level, making it one of
+                my all-time favorites from One OK Rock.
+              </li>
+            </ol>
+
+            <p>
+              Sources:
+              <a
+                href="https://www.allmusic.com/artist/one-ok-rock-mn0002010336"
+                target="_blank"
+                >AllMusic</a
+              >,
+              <a href="https://www.moshimoshi-nippon.jp/452550" target="_blank"
+                >Moshi Moshi Nippon</a
+              >
+            </p>
+          </div>
+
+          <div class="asking">
+            <h3>How About You?</h3>
+            <button>
+              <a href="form.html" class="btn">Lemme know about your role!</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper.JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the current page ID
+        var currentPageId = "home"; // Change this to the ID of the current page
+
+        // Select the corresponding menu link
+        var currentMenuLink = document.querySelector(
+          'a[href="#' + currentPageId + '"]'
+        );
+
+        // Check if the menu link exists and add the class
+        if (currentMenuLink) {
+          currentMenuLink.classList.add("active-menu");
+        }
+      });
+    </script>
+  </body>
+</html>

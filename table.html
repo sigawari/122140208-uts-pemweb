@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Table of Response "Your Idol"</title>
+  </head>
+  <body>
+    <h1>Table of Response "Your Idol"</h1>
+    <div class="table-container">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Your Name</th>
+            <th>Your Age</th>
+            <th>Role Model</th>
+            <th>Reasons for Admiration</th>
+            <th>How You Heard</th>
+            <th>Continent</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dummy data generated with looping -->
+          <script>
+            for (let i = 1; i <= 50; i++) {
+              document.write(
+                '<tr class="' + (i % 2 === 0 ? "even" : "odd") + '">'
+              );
+              document.write("<td>" + i + "</td>");
+              document.write("<td>Name " + i + "</td>");
+              document.write("<td>" + (20 + (i % 30)) + "</td>");
+              document.write("<td>Model " + i + "</td>");
+              document.write("<td>Admiration Reason " + i + "</td>");
+              document.write(
+                "<td>" +
+                  [
+                    "Social Media",
+                    "TV/Movies",
+                    "Friends/Family",
+                    "Events/Concerts",
+                    "Other",
+                  ][Math.floor(Math.random() * 5)] +
+                  "</td>"
+              );
+              document.write(
+                "<td>" +
+                  [
+                    "Asia",
+                    "Europe",
+                    "North America",
+                    "South America",
+                    "Africa",
+                    "Oceania",
+                    "Antarctica",
+                  ][Math.floor(Math.random() * 7)] +
+                  "</td>"
+              );
+              document.write("</tr>");
+            }
+          </script>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <footer>
+    <p>© Sikah Nubuahtul Ilmi UTS Pemweb 2024</p>
+  </footer>
+</html>
